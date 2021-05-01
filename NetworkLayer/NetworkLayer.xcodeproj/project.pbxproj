@@ -7,27 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4C54368263D9F190044E6CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C54367263D9F190044E6CE /* AppDelegate.swift */; };
-		B4C5436A263D9F190044E6CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C54369263D9F190044E6CE /* SceneDelegate.swift */; };
-		B4C5436C263D9F190044E6CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5436B263D9F190044E6CE /* ViewController.swift */; };
-		B4C5436F263D9F190044E6CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C5436D263D9F190044E6CE /* Main.storyboard */; };
-		B4C54371263D9F1D0044E6CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C54370263D9F1D0044E6CE /* Assets.xcassets */; };
-		B4C54374263D9F1D0044E6CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C54372263D9F1D0044E6CE /* LaunchScreen.storyboard */; };
 		B4C5437F263DA1560044E6CE /* RouterCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5437E263DA1560044E6CE /* RouterCase.swift */; };
 		B4C54383263DA4680044E6CE /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C54382263DA4680044E6CE /* HTTPMethod.swift */; };
+		B4C54389263DA68F0044E6CE /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C54388263DA68F0044E6CE /* ServiceLayer.swift */; };
+		B4C5438E263DA84E0044E6CE /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5438D263DA84E0044E6CE /* RouterProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B4C54364263D9F190044E6CE /* NetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4C54367263D9F190044E6CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4C54369263D9F190044E6CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4C5436B263D9F190044E6CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B4C5436E263D9F190044E6CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B4C54370263D9F1D0044E6CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B4C54373263D9F1D0044E6CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B4C54375263D9F1D0044E6CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4993053263DC7BB00ECAA0F /* NetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = NetworkLayer.app; path = "/Users/pedrobraz/Documents/Studies/NetworkLayer/NetworkLayer/build/Debug-iphoneos/NetworkLayer.app"; sourceTree = "<absolute>"; };
 		B4C5437E263DA1560044E6CE /* RouterCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterCase.swift; sourceTree = "<group>"; };
 		B4C54382263DA4680044E6CE /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B4C54388263DA68F0044E6CE /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		B4C5438D263DA84E0044E6CE /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,39 +36,16 @@
 			isa = PBXGroup;
 			children = (
 				B4C54366263D9F190044E6CE /* NetworkLayer */,
-				B4C54365263D9F190044E6CE /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		B4C54365263D9F190044E6CE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B4C54364263D9F190044E6CE /* NetworkLayer.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B4C54366263D9F190044E6CE /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				B4C54387263DA65D0044E6CE /* ServiceLayer */,
 				B4C5437D263DA14A0044E6CE /* Router */,
-				B4C5437C263DA11C0044E6CE /* BaseFiles */,
-				B4C54375263D9F1D0044E6CE /* Info.plist */,
 			);
 			path = NetworkLayer;
-			sourceTree = "<group>";
-		};
-		B4C5437C263DA11C0044E6CE /* BaseFiles */ = {
-			isa = PBXGroup;
-			children = (
-				B4C54367263D9F190044E6CE /* AppDelegate.swift */,
-				B4C54369263D9F190044E6CE /* SceneDelegate.swift */,
-				B4C5436B263D9F190044E6CE /* ViewController.swift */,
-				B4C5436D263D9F190044E6CE /* Main.storyboard */,
-				B4C54370263D9F1D0044E6CE /* Assets.xcassets */,
-				B4C54372263D9F1D0044E6CE /* LaunchScreen.storyboard */,
-			);
-			path = BaseFiles;
 			sourceTree = "<group>";
 		};
 		B4C5437D263DA14A0044E6CE /* Router */ = {
@@ -85,8 +53,17 @@
 			children = (
 				B4C5437E263DA1560044E6CE /* RouterCase.swift */,
 				B4C54382263DA4680044E6CE /* HTTPMethod.swift */,
+				B4C5438D263DA84E0044E6CE /* RouterProtocol.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		B4C54387263DA65D0044E6CE /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B4C54388263DA68F0044E6CE /* ServiceLayer.swift */,
+			);
+			path = ServiceLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +83,7 @@
 			);
 			name = NetworkLayer;
 			productName = NetworkLayer;
-			productReference = B4C54364263D9F190044E6CE /* NetworkLayer.app */;
+			productReference = B4993053263DC7BB00ECAA0F /* NetworkLayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +109,7 @@
 				Base,
 			);
 			mainGroup = B4C5435B263D9F190044E6CE;
-			productRefGroup = B4C54365263D9F190044E6CE /* Products */;
+			productRefGroup = B4C5435B263D9F190044E6CE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -146,9 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C54374263D9F1D0044E6CE /* LaunchScreen.storyboard in Resources */,
-				B4C54371263D9F1D0044E6CE /* Assets.xcassets in Resources */,
-				B4C5436F263D9F190044E6CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,34 +133,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C54389263DA68F0044E6CE /* ServiceLayer.swift in Sources */,
 				B4C54383263DA4680044E6CE /* HTTPMethod.swift in Sources */,
+				B4C5438E263DA84E0044E6CE /* RouterProtocol.swift in Sources */,
 				B4C5437F263DA1560044E6CE /* RouterCase.swift in Sources */,
-				B4C5436C263D9F190044E6CE /* ViewController.swift in Sources */,
-				B4C54368263D9F190044E6CE /* AppDelegate.swift in Sources */,
-				B4C5436A263D9F190044E6CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B4C5436D263D9F190044E6CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4C5436E263D9F190044E6CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B4C54372263D9F1D0044E6CE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4C54373263D9F1D0044E6CE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B4C54376263D9F1D0044E6CE /* Debug */ = {

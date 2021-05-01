@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Router {
+enum Router: RouterProtocol {
     case getSourcers
     case getProductIds
     case getProductInfo
